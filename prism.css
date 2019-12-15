@@ -340,3 +340,6 @@ div.code-toolbar > .toolbar span:focus {
 	text-decoration: none;
 }
 
+pre {
+            max-height: 400px;
+        }
