@@ -1,1 +1,546 @@
-<h1>hello</h1>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://github.com/f86597/prism/blob/master/prism.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://github.com/f86597/prism/blob/master/prism.js"></script>
+    <title>Prism Showcase</title>
+    <style>
+        pre {
+            max-height: 400px;
+        }
+
+        .bg-cus {
+            background-color: #00A5AF;
+        }
+
+        .navbar-nav a,
+        .navbar-brand {
+            color: white !important;
+        }
+
+        .cont {
+            background-color: #f7f4f4;
+            border: 1px solid lightgray;
+            padding: 10px;
+            color: #e83e8c;
+        }
+
+        .footer {
+            background: #00A5AF;
+        }
+
+        .jumbotron {
+            background: #00A5AF;
+            color: #fff;
+            padding: 7rem;
+            border-radius: 0px;
+        }
+
+        .jumbotron svg {
+            width: 40%
+        }
+    </style>
+</head>
+
+<body>
+    <div class="jumbotron">
+        <div class="container">
+            <div class="text-center mb-3">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 170">
+                    <path fill="#fff" d="M55.37 131.5H48.4v9.13h6.97c1.67 0 2.92-.4 3.78-1.22.85
+                -.8 1.28-1.92 1.28-3.33s-.43-2.54-1.28-3.35c-.86-.8-2.12-1.2-3.78-1.2m29.52
+                6.4c.3-.53.47-1.2.47-2.04 0-1.35-.45-2.4-1.37-3.2-.92-.76-2.14-1.15-3.65
+                -1.15H72.9v8.52h7.32c2.26 0 3.82-.7 4.67-2.1M100 0L0 170h200L100 0M60.86
+                141.03c-1.3 1.22-3.1 1.84-5.33 1.84H48.4v7.55H46v-21.2h9.53c2.24 0 4.02.63
+                5.34 1.87 1.3 1.23 1.96 2.88 1.96 4.95 0 2.1-.66 3.75-1.97 4.98m24.5 9.4l
+                -5.1-8.14h-7.37v8.12h-2.4v-21.2h10.14c2.15 0 3.88.6 5.18 1.8 1.3 1.18 1.95
+                2.8 1.95 4.84 0 2.64-1.1 4.44-3.3 5.4-.6.28-1.22.5-1.82.6l5.57 8.56h-2.85m
+                13.43 0h-2.4v-21.2h2.4v21.2m23.56-1.32c-1.48 1.05-3.53 1.57-6.16 1.57-2.96 0
+                -5.23-.6-6.78-1.85-1.4-1.1-2.18-2.7-2.37-4.74h2.5c.08 1.45.78 2.56 2.1 3.33
+                1.16.67 2.68 1 4.58 1 3.97 0 5.95-1.25 5.95-3.74 0-.86-.35-1.53-1.07-2.02-.7
+                -.5-1.6-.9-2.68-1.2-1.07-.33-2.24-.63-3.48-.9s-2.4-.65-3.5-1.08-1.97-1.02
+                -2.68-1.73c-.7-.72-1.07-1.68-1.07-2.9 0-1.73.65-3.13 1.97-4.22 1.32-1.08
+                3.32-1.62 6-1.62 2.67 0 4.75.6 6.23 1.85 1.34 1.1 2.05 2.5 2.14 4.2h-2.46c
+                -.22-1.76-1.35-2.92-3.4-3.5-.72-.2-1.62-.3-2.7-.3s-1.98.1-2.72.35c-.74.25
+                -1.3.55-1.7.9-.42.35-.7.74-.83 1.17s-.2.88-.2 1.36c0 .5.2.93.62 1.33s.96.75
+                1.65 1.03c.68.28 1.46.52 2.33.73.88.2 1.77.43 2.67.65.9.22 1.8.48 2.68.77.87
+                .3 1.65.65 2.33 1.1 1.53.96 2.28 2.27 2.28 3.94 0 2-.74 3.5-2.22 4.55m28.84
+                1.32v-17.54l-7.84 10.08-7.97-10.08v17.54H133v-21.2h2.78l7.58 10.06 7.45
+                -10.05h2.8v21.2h-2.4" />
+                </svg>
+            </div>
+            <h3>Prism is a lightweight, extensible <code>syntax highlighter</code>, built with modern web standards in
+                mind.
+                It’s used in
+                thousands of websites, including some of those you visit daily. </h3>
+        </div>
+    </div>
+    <div class="container">
+        <h2 class="mt-5 mb-3">HTML Example</h2>
+        <pre class="line-numbers"><code class="language-html">&#x3C;div class=&#x22;container&#x22;&#x3E;
+    &#x3C;div class=&#x22;row&#x22;&#x3E;
+        &#x3C;div class=&#x22;col-md-6 order-md-1 text-center text-md-left pr-md-5&#x22;&#x3E;
+            &#x3C;h1 class=&#x22;mb-3 bd-text-purple-bright&#x22;&#x3E;Bootstrap&#x3C;/h1&#x3E;
+            &#x3C;p class=&#x22;lead&#x22;&#x3E;
+                Build responsive, mobile-first projects on the web with the world&#x2019;s most popular front-end component
+                library.
+            &#x3C;/p&#x3E;
+            &#x3C;p class=&#x22;lead mb-4&#x22;&#x3E;
+                Bootstrap is an open source toolkit for developing with HTML, CSS, and JS. Quickly prototype your ideas
+                or build your entire app with our Sass variables and mixins, responsive grid system, extensive prebuilt
+                components, and powerful plugins built on jQuery.
+            &#x3C;/p&#x3E;
+            &#x3C;div class=&#x22;row mx-n2&#x22;&#x3E;
+                &#x3C;div class=&#x22;col-md px-2&#x22;&#x3E;
+                    &#x3C;a href=&#x22;/docs/4.4/getting-started/introduction/&#x22; class=&#x22;btn btn-lg btn-bd-primary w-100 mb-3&#x22;
+                        onclick=&#x22;ga(&#x27;send&#x27;, &#x27;event&#x27;, &#x27;Jumbotron actions&#x27;, &#x27;Get started&#x27;, &#x27;Get started&#x27;);&#x22;&#x3E;Get
+                        started&#x3C;/a&#x3E;
+                &#x3C;/div&#x3E;
+                &#x3C;div class=&#x22;col-md px-2&#x22;&#x3E;
+                    &#x3C;a href=&#x22;/docs/4.4/getting-started/download/&#x22; class=&#x22;btn btn-lg btn-outline-secondary w-100 mb-3&#x22;
+                        onclick=&#x22;ga(&#x27;send&#x27;, &#x27;event&#x27;, &#x27;Jumbotron actions&#x27;, &#x27;Download&#x27;, &#x27;Download 4.4.1&#x27;);&#x22;&#x3E;Download&#x3C;/a&#x3E;
+                &#x3C;/div&#x3E;
+            &#x3C;/div&#x3E;
+            &#x3C;p class=&#x22;text-muted mb-0&#x22;&#x3E;
+                Currently v4.4.1
+            &#x3C;/p&#x3E;
+        &#x3C;/div&#x3E;
+    &#x3C;/div&#x3E;
+&#x3C;/div&#x3E;
+            </code></pre>
+        <h2 class="mt-5 mb-3">CSS Example</h2>
+        <pre class="line-numbers"><code class="language-css">#languages {
+        column-count: 4;
+    }
+        #languages > h1 {
+            margin-top: 0;
+            column-span: all;
+        }
+        #languages label {
+            display: block;
+            padding: .2em;
+        }
+        #languages label[data-id="javascript"] {
+            border-bottom: 1px solid #aaa;
+            padding-bottom: 1em;
+            margin-bottom: 1em;
+        }
+        #languages .unavailable {
+            color: #aaa;
+        }
+        #languages input {
+            margin-right: .7em;
+        }
+    
+    #examples > section {
+        display: block;
+        margin: auto;
+        max-width: 900px;
+    }
+        #examples h3 {
+            margin: 1em 0 0.3em;
+        }
+    ul {
+        padding-left: 40px;
+    }</code></pre>
+        <h2 class="mt-5 mb-3">JavaScript Example</h2>
+        <pre class="line-numbers"><code class="language-js">var each = _.each = _.forEach = function (obj, iterator, context) {
+            if (obj == null) return;
+            if (nativeForEach && obj.forEach === nativeForEach) {
+                obj.forEach(iterator, context);
+            } else if (obj.length === +obj.length) {
+                for (var i = 0, l = obj.length; i < l; i++) {
+                    if (i in obj && iterator.call(context, obj[i], i, obj) === breaker) return;
+                }
+            } else {
+                for (var key in obj) {
+                    if (_.has(obj, key)) {
+                        if (iterator.call(context, obj[key], key, obj) === breaker) return;
+                    }
+                }
+            }
+        };</code></pre>
+        <section id="basic-usage" class="language-markup">
+            <h1>Basic usage</h1>
+
+            <p>You will need to include the <code>prism.css</code> and <code>prism.js</code> files you downloaded in
+                your page. Example:
+                <pre><code>&lt;!DOCTYPE html>
+&lt;html>
+&lt;head>
+            ...</code>
+            <code class="highlight">&lt;link href="themes/prism.css" rel="stylesheet" /></code>
+        <code>&lt;/head>
+&lt;body>
+            ...</code>
+            <code class="highlight">&lt;script src="prism.js">&lt;/script></code>
+        <code>&lt;/body>
+&lt;/html></code></pre>
+                <br><br>
+                <p>Prism does its best to encourage good authoring practices. Therefore, it only works with
+                    <code>&lt;code></code> elements, since marking up code without a <code>&lt;code></code> element is
+                    semantically invalid.
+                    <a href="https://www.w3.org/TR/html52/textlevel-semantics.html#the-code-element">According to the
+                        HTML5 spec</a>, the recommended way to define a code language is a <code>language-xxxx</code>
+                    class, which is what Prism uses.
+                    Alternatively, Prism also supports a shorter version: <code>lang-xxxx</code>.</p>
+
+                <p>To make things easier however, Prism assumes that this language definition is inherited. Therefore,
+                    if multiple <code>&lt;code></code> elements have the same language, you can add the
+                    <code>language-xxxx</code> class on one of their common ancestors.
+                    This way, you can also define a document-wide default language, by adding a
+                    <code>language-xxxx</code> class on the <code>&lt;body></code> or <code>&lt;html></code> element.
+                </p>
+
+                <p>If you want to opt-out of highlighting for a <code>&lt;code></code> element that is a descendant of
+                    an element with a declared code language, you can add the class <code>language-none</code> to it (or
+                    any non-existing language, really).</p>
+
+                <p>The <a href="https://www.w3.org/TR/html5/grouping-content.html#the-pre-element">recommended way to
+                        mark up a code block</a>
+                    (both for semantics and for Prism) is a <code>&lt;pre></code> element with a <code>&lt;code></code>
+                    element inside, like so:</p>
+                <pre><code>&lt;pre>&lt;code class="language-css">p { color: red }&lt;/code>&lt;/pre></code></pre>
+                <p>If you use that pattern, the <code>&lt;pre></code> will automatically get the
+                    <code>language-xxxx</code> class (if it doesn’t already have it) and will be styled as a code block.
+                </p>
+
+                <p>If you want to prevent any elements from being automatically highlighted and instead use the <a
+                        href="extending.html#api">API</a>, you can set <code
+                        class="language-javascript">Prism.manual</code> to <code class="language-javascript">true</code>
+                    before the <code>DOMContentLoaded</code> event is fired. By setting the <code>data-manual</code>
+                    attribute on the <code>&lt;script></code> element containing Prism core, this will be done
+                    automatically.
+                    Example:</p>
+                <pre><code>&lt;script src="prism.js" data-manual>&lt;/script></code></pre>
+                <p>or</p>
+                <pre><code>&lt;script>
+        window.Prism = window.Prism || {};
+        window.Prism.manual = true;
+        &lt;/script>
+        &lt;script src="prism.js">&lt;/script></code></pre>
+
+                <h2>Usage with CDNs</h2>
+
+                <p>In combination with CDNs, we recommend using the <a href="plugins/autoloader">Autoloader plugin</a>
+                    which automatically loads languages when necessary.</p>
+
+                <p>The setup of the Autoloader, will look like the following. You can also your own themes of course.
+                </p>
+
+                <pre><code>&lt;!DOCTYPE html>
+        &lt;html>
+        &lt;head>
+            ...</code>
+            <code class="highlight">&lt;link href="https://myCDN.com/prism@v1.x/themes/prism.css" rel="stylesheet" /></code>
+        <code>&lt;/head>
+        &lt;body>
+            ...</code>
+        <code class="highlight" style="display: inline-block; outline-offset: .2em; margin-bottom: .2em;">	&lt;script src="https://myCDN.com/prism@v1.x/components/prism-core.min.js"&gt;&lt;/script&gt;
+            &lt;script src="https://myCDN.com/prism@v1.x/plugins/autoloader/prism-autoloader.min.js"&gt;&lt;/script&gt;</code>
+        <code>&lt;/body>
+        &lt;/html></code></pre>
+
+                <p>CDNs which provide PrismJS are e.g. <a href="https://cdnjs.com/libraries/prism">cdnjs</a> and <a
+                        href="https://www.jsdelivr.com/package/npm/prismjs">jsDelivr</a>.</p>
+
+                <h2>Usage with Webpack, Browserify, & Other Bundlers</h2>
+
+                <p>If you want to use Prism with a bundler, install Prism with <code>npm</code>:</p>
+
+                <pre><code>$ npm install prismjs</code></pre>
+
+                <p>You can then <code class="language-js">import</code> into your bundle:</p>
+
+                <pre><code class="language-js">import Prism from 'prismjs';</code></pre>
+
+                <p>To make it easy to configure your Prism instance with only the languages and plugins you need, use
+                    the babel plugin,
+                    <a href="https://github.com/mAAdhaTTah/babel-plugin-prismjs">babel-plugin-prismjs</a>. This will
+                    allow you to load
+                    the minimum number of languages and plugins to satisfy your needs.
+                    See that plugin's documentation for configuration details.</p>
+
+                <h2>Usage with Node</h2>
+
+                <p>If you want to use Prism on the server or through the command line, Prism can be used with Node.js as
+                    well.
+                    This might be useful if you're trying to generate static HTML pages with highlighted code for
+                    environments that don't support browser-side JS, like <a href="https://www.ampproject.org/">AMP
+                        pages</a>.</p>
+
+                <p>Example:</p>
+                <pre><code class="language-js">const Prism = require('prismjs');
+        
+        // The code snippet you want to highlight, as a string
+        const code = `var data = 1;`;
+        
+        // Returns a highlighted HTML string
+        const html = Prism.highlight(code, Prism.languages.javascript, 'javascript');</code></pre>
+
+                <p>Requiring <code>prismjs</code> will load the default languages: <code>markup</code>,
+                    <code>css</code>,
+                    <code>clike</code> and <code>javascript</code>. You can load more languages with the
+                    <code class="language-javascript">loadLanguages()</code> utility, which will automatically handle
+                    any required dependencies.</p>
+                <p>Example:</p>
+
+                <pre><code class="language-js">const Prism = require('prismjs');
+        const loadLanguages = require('prismjs/components/');
+        loadLanguages(['haml']);
+        
+        // The code snippet you want to highlight, as a string
+        const code = `= ['hi', 'there', 'reader!'].join " "`;
+        
+        // Returns a highlighted HTML string
+        const html = Prism.highlight(code, Prism.languages.haml, 'haml');</code></pre>
+
+                <p><strong>Note</strong>: Do <em>not</em> use <code class="language-javascript">loadLanguages()</code>
+                    with Webpack or another bundler, as this will cause Webpack to include all languages and plugins.
+                    Use the babel plugin described above.</p>
+
+        </section>
+        <h1 class="mt-5 mb-3">Supported Languages</h1>
+
+        This is the list of all 199 languages currently supported by Prism, with their corresponding alias, to use in
+        place of xxxx in the language-xxxx (or lang-xxxx) class:
+        <br>
+        <br>
+        <div class="row cont">
+
+
+            <div class="col-4">
+                <ul>
+                    <li> Markup - markup, html, xml, svg, mathml</li>
+                    <li> CSS - css</li>
+                    <li> C-like - clike</li>
+                    <li> JavaScript - javascript, js</li>
+                    <li> ABAP - abap</li>
+                    <li> Augmented Backus–Naur form - abnf</li>
+                    <li> ActionScript - actionscript</li>
+                    <li> Ada - ada</li>
+                    <li> ANTLR4 - antlr4, g4</li>
+                    <li> Apache Configuration - apacheconf</li>
+                    <li> APL - apl</li>
+                    <li> AppleScript - applescript</li>
+                    <li> AQL - aql</li>
+                    <li> Arduino - arduino</li>
+                    <li> ARFF - arff</li>
+                    <li> AsciiDoc - asciidoc, adoc</li>
+                    <li> 6502 Assembly - asm6502</li>
+                    <li> ASP.NET (C#) - aspnet</li>
+                    <li> AutoHotkey - autohotkey</li>
+                    <li> AutoIt - autoit</li>
+                    <li> Bash - bash, shell</li>
+                    <li> BASIC - basic</li>
+                    <li> Batch - batch</li>
+                    <li> BBcode - bbcode</li>
+                    <li> Bison - bison</li>
+                    <li> Backus–Naur form - bnf, rbnf</li>
+                    <li> Brainfuck - brainfuck</li>
+                    <li> BrightScript - brightscript</li>
+                    <li> Bro - bro</li>
+                    <li> C - c</li>
+                    <li> C# - csharp, cs, dotnet</li>
+                    <li> C++ - cpp</li>
+                    <li> CIL - cil</li>
+                    <li> CoffeeScript - coffeescript, coffee</li>
+                    <li> CMake - cmake</li>
+                    <li> Clojure - clojure</li>
+                    <li> Crystal - crystal</li>
+                    <li> Content-Security-Policy - csp</li>
+                    <li> CSS Extras - css-extras</li>
+                    <li> D - d</li>
+                    <li> Dart - dart</li>
+                    <li> Diff - diff</li>
+                    <li> Django/Jinja2 - django, jinja2</li>
+                    <li> DNS zone file - dns-zone-file, dns-zone</li>
+                    <li> Docker - docker, dockerfile</li>
+                    <li> Extended Backus–Naur form - ebnf</li>
+                    <li> Eiffel - eiffel</li>
+                    <li> EJS - ejs</li>
+                    <li> Elixir - elixir</li>
+                    <li> Elm - elm</li>
+                    <li> Embedded Lua templating - etlua</li>
+                    <li> ERB - erb</li>
+                    <li> Erlang - erlang</li>
+                    <li> F# - fsharp</li>
+                    <li> Firestore security rules - firestore-security-rules</li>
+                    <li> Flow - flow</li>
+                    <li> Fortran - fortran</li>
+                    <li> FreeMarker Template Language - ftl</li>
+                    <li> G-code - gcode</li>
+                    <li> GDScript - gdscript</li>
+                    <li> GEDCOM - gedcom</li>
+                    <li> Gherkin - gherkin</li>
+                    <li> Git - git</li>
+                    <li> GLSL - glsl</li>
+                    <li> GameMaker Language - gml, gamemakerlanguage</li>
+
+                </ul>
+            </div>
+            <div class="col-4">
+                <ul>
+                    <li> Go - go</li>
+                    <li> GraphQL - graphql</li>
+                    <li> Groovy - groovy</li>
+                    <li> Haml - haml</li>
+                    <li> Handlebars - handlebars</li>
+                    <li> Haskell - haskell, hs</li>
+                    <li> Haxe - haxe</li>
+                    <li> HCL - hcl</li>
+                    <li> HTTP - http</li>
+                    <li> HTTP Public-Key-Pins - hpkp</li>
+                    <li> HTTP Strict-Transport-Security - hsts</li>
+                    <li> IchigoJam - ichigojam</li>
+                    <li> Icon - icon</li>
+                    <li> Inform 7 - inform7</li>
+                    <li> Ini - ini</li>
+                    <li> Io - io</li>
+                    <li> J - j</li>
+                    <li> Java - java</li>
+                    <li> JavaDoc - javadoc</li>
+                    <li> JavaDoc-like - javadoclike</li>
+                    <li> Java stack trace - javastacktrace</li>
+                    <li> Jolie - jolie</li>
+                    <li> JQ - jq</li>
+                    <li> JSDoc - jsdoc</li>
+                    <li> JS Extras - js-extras</li>
+                    <li> JS Templates - js-templates</li>
+                    <li> JSON - json</li>
+                    <li> JSONP - jsonp</li>
+                    <li> JSON5 - json5</li>
+                    <li> Julia - julia</li>
+                    <li> Keyman - keyman</li>
+                    <li> Kotlin - kotlin</li>
+                    <li> LaTeX - latex, tex, context</li>
+                    <li> Less - less</li>
+                    <li> LilyPond - lilypond, ly</li>
+                    <li> Liquid - liquid</li>
+                    <li> Lisp - lisp, emacs, elisp, emacs-lisp</li>
+                    <li> LiveScript - livescript</li>
+                    <li> LOLCODE - lolcode</li>
+                    <li> Lua - lua</li>
+                    <li> Makefile - makefile</li>
+                    <li> Markdown - markdown, md</li>
+                    <li> Markup templating - markup-templating</li>
+                    <li> MATLAB - matlab</li>
+                    <li> MEL - mel</li>
+                    <li> Mizar - mizar</li>
+                    <li> Monkey - monkey</li>
+                    <li> MoonScript - moonscript, moon</li>
+                    <li> N1QL - n1ql</li>
+                    <li> N4JS - n4js, n4jsd</li>
+                    <li> Nand To Tetris HDL - nand2tetris-hdl</li>
+                    <li> NASM - nasm</li>
+                    <li> nginx - nginx</li>
+                    <li> Nim - nim</li>
+                    <li> Nix - nix</li>
+                    <li> NSIS - nsis</li>
+                    <li> Objective-C - objectivec</li>
+                    <li> OCaml - ocaml</li>
+                    <li> OpenCL - opencl</li>
+                    <li> Oz - oz</li>
+                    <li> PARI/GP - parigp</li>
+                    <li> Parser - parser</li>
+                    <li> Pascal - pascal, objectpascal</li>
+                    <li> Pascaligo - pascaligo</li>
+                    <li> PC-Axis - pcaxis, px</li>
+                    <li> Perl - perl</li>
+                    <li> PHP - php</li>
+                </ul>
+
+            </div>
+            <div class="col-4">
+                <ul>
+                    <li> PHPDoc - phpdoc</li>
+                    <li> PHP Extras - php-extras</li>
+                    <li> PL/SQL - plsql</li>
+                    <li> PowerShell - powershell</li>
+                    <li> Processing - processing</li>
+                    <li> Prolog - prolog</li>
+                    <li> .properties - properties</li>
+                    <li> Protocol Buffers - protobuf</li>
+                    <li> Pug - pug</li>
+                    <li> Puppet - puppet</li>
+                    <li> Pure - pure</li>
+                    <li> Python - python, py</li>
+                    <li> Q (kdb+ database) - q</li>
+                    <li> Qore - qore</li>
+                    <li> R - r</li>
+                    <li> React JSX - jsx</li>
+                    <li> React TSX - tsx</li>
+                    <li> Ren'py - renpy</li>
+                    <li> Reason - reason</li>
+                    <li> Regex - regex</li>
+                    <li> reST (reStructuredText) - rest</li>
+                    <li> Rip - rip</li>
+                    <li> Roboconf - roboconf</li>
+                    <li> Robot Framework - robotframework, robot</li>
+                    <li> Ruby - ruby, rb</li>
+                    <li> Rust - rust</li>
+                    <li> SAS - sas</li>
+                    <li> Sass (Sass) - sass</li>
+                    <li> Sass (Scss) - scss</li>
+                    <li> Scala - scala</li>
+                    <li> Scheme - scheme</li>
+                    <li> Shell session - shell-session</li>
+                    <li> Smalltalk - smalltalk</li>
+                    <li> Smarty - smarty</li>
+                    <li> Solidity (Ethereum) - solidity</li>
+                    <li> Soy (Closure Template) - soy</li>
+                    <li> SPARQL - sparql, rq</li>
+                    <li> Splunk SPL - splunk-spl</li>
+                    <li> SQF: Status Quo Function (Arma 3) - sqf</li>
+                    <li> SQL - sql</li>
+                    <li> Stylus - stylus</li>
+                    <li> Swift - swift</li>
+                    <li> TAP - tap</li>
+                    <li> Tcl - tcl</li>
+                    <li> Textile - textile</li>
+                    <li> TOML - toml</li>
+                    <li> Template Toolkit 2 - tt2</li>
+                    <li> Turtle - turtle, trig</li>
+                    <li> Twig - twig</li>
+                    <li> TypeScript - typescript, ts</li>
+                    <li> T4 Text Templates (C#) - t4-cs, t4</li>
+                    <li> T4 Text Templates (VB) - t4-vb</li>
+                    <li> T4 templating - t4-templating</li>
+                    <li> Vala - vala</li>
+                    <li> VB.Net - vbnet</li>
+                    <li> Velocity - velocity</li>
+                    <li> Verilog - verilog</li>
+                    <li> VHDL - vhdl</li>
+                    <li> vim - vim</li>
+                    <li> Visual Basic - visual-basic, vb</li>
+                    <li> WebAssembly - wasm</li>
+                    <li> Wiki markup - wiki</li>
+                    <li> Xeora - xeora, xeoracube</li>
+                    <li> Xojo (REALbasic) - xojo</li>
+                    <li> XQuery - xquery</li>
+                    <li> YAML - yaml, yml</li>
+                    <li> Zig - zig</li>
+                </ul>
+
+            </div>
+        </div>
+        <div class="p-5">
+            <h3 class="mt-5 mb-3 text-center">Check official <a href="https://prismjs.com/" target="blank">Website</a>
+                for more details.
+            </h3>
+        </div>
+
+    </div>
+    <div class="footer p-3 mb-0">
+        <p class="text-center">Designed With @love; Bootstrap and PrismJS by <a href="http://www.github.com/f86597"
+                class="text-danger">F86597</a></p>
+    </div>
+</body>
+
+</html>
