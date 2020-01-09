@@ -4,4 +4,4 @@
 
 <h2>DEMO & Usage</h2>
 
-<a href="https://f86597.github.io/prism/" target="_blank">Click HERE</a> to see DEMO and read usage instructions.
+<a href="https://f86597.github.io/Syntax-Highlighter/" target="_blank">Click HERE</a> to see DEMO and read usage instructions.
