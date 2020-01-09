@@ -1,6 +1,6 @@
 <h1>Syntax Highlighter</h1>
 
-<p>A simple and easy to use but Effective SYNtAX HIGHLIGHTER fr your website which support many programming languages.</p>
+<p>A simple and easy to use but Effective SYNTAX HIGHLIGHTER for your website which support many programming languages.</p>
 
 <h2>DEMO & Usage</h2>
 
